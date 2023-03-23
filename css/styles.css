@@ -366,6 +366,10 @@ body {
   fill: #4d5ae5;
 }
 
+.form-input-1:hover + .form-icon-1 {
+  fill: #4d5ae5;
+}
+
 .form-icon-1 {
   position: absolute;
   left: 18px;
