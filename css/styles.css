@@ -44,6 +44,11 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.visually-hidden {
+  visibility: hidden;
+}
+
 /* ---------------  Header ----------*/
 
 .header {
@@ -516,7 +521,6 @@ body {
 
 .text-area-label {
   width: 360px;
-  margin-bottom: 16px;
   color: #8e8f99;
   letter-spacing: 0.04em;
   font-family: "Roboto";
@@ -531,6 +535,14 @@ body {
 }
 
 .form-check {
+  position: relative;
+}
+
+.form-icon-check {
+  position: absolute;
+  left: 26px;
+  bottom: 102px;
+  fill: #ffffff;
 }
 
 .form-label-check {
@@ -539,14 +551,40 @@ body {
   line-height: 1.16;
   letter-spacing: 0.04em;
   color: #757575;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
+  display: flex;
+  align-items: center;
 }
 
 .form-label-check::before {
+  position: absolute;
+  left: 23px;
   content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1.25px solid #2e2f42;
+  border-radius: 2px;
+  margin-right: 8px;
 }
+
+.form-check:checked + .form-label-check::before {
+  background: #404bbf;
+}
+
+/* .form-label-check span {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: 1.25px solid #2e2f42;
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  /* fill: transparent; */
+
+/* .form-check:checked + .form-label-check span {
+  fill: #404bbf;
+} */
 
 /* /Hero Section */
 
