@@ -479,7 +479,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   cursor: pointer;
-  display: inline-block;
+  display: block;
   letter-spacing: 0.04em;
   color: #ffffff;
   width: 169px;
@@ -512,6 +512,40 @@ body {
   font-size: 12px;
   line-height: 1.16;
   display: block;
+}
+
+.text-area-label {
+  width: 360px;
+  margin-bottom: 16px;
+  color: #8e8f99;
+  letter-spacing: 0.04em;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  display: block;
+}
+
+.form-check-box {
+}
+
+.form-check {
+}
+
+.form-label-check {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
+  color: #757575;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.form-label-check::before {
+  content: "";
 }
 
 /* /Hero Section */
