@@ -1238,11 +1238,8 @@ body {
   margin-left: 16px;
 }
 
-/* .footer-subtitle {
-  position: relative;
-  display: flex;
-  gap: 24px;
-} */
+.footer-main-form {
+}
 
 .footer-form {
   position: absolute;

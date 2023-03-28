@@ -172,7 +172,7 @@
       <section class="section1-box">
         <!-- Семантичний заголовок Н2,потім прибрати -->
         <div class="container">
-          <h2 hidden>Advantages</h2>
+          <h2 class="visually-hidden">Advantages</h2>
           <ul class="list section-1">
             <li>
               <div class="section1-box-item">
@@ -573,23 +573,23 @@
         <div class="footer-subscribe-box">
           <p class="footer-subscribe-text">Subscribe</p>
           <!-- <div class="footer-subtitle"> -->
-          <label for="Subscribe">
+          <form class="footer-main-form">
+            <!-- <label for="Subscribe"> -->
             <input
               class="footer-form"
               id="Subscribe"
-              type="text"
+              type="email"
               placeholder="E-mail"
             />
-          </label>
-          <a href="">
+            <!-- </label> -->
             <button class="footer-button" type="submit">
               Subscribe
               <svg class="footer-telega-logo" width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-Telegram"></use>
               </svg>
             </button>
-            <!-- </div> -->
-          </a>
+          </form>
+          <!-- </div> -->
         </div>
       </div>
     </footer>
